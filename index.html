@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryan Yoga Septian | Portofolio </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader">
+        <div class="loader-inner">
+            <div class="circle"></div>
+        </div>
+    </div>
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="#beranda">
+                    <img src="assets/profil pf.jpg" alt="logo-text" class="logo-img">
+                    <span class="logo-text">Portofolio</span>
+                </a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#beranda" class="nav-link active">HOME</a></li>
+                    <li><a href="#tentang" class="nav-link">ABOUT</a></li>
+                    <li><a href="#portofolio" class="nav-link">PROJECTS</a></li>
+                    <li><a href="#kontak" class="nav-link">CONTACT</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="fade-in">
+                    <span class="greeting">Hey, I'am</span>
+                    <span class="name">RYAN YOGA SEPTIAN</span>
+                </h1>
+                <p class="typing-text fade-in-delay">
+                    <span class="typed-text"></span><span class="cursor">&nbsp;</span>
+                </p>
+                <div class="hero-cta fade-in-delay-2">
+                    <a href="#portofolio" class="btn btn-primary">PROJECTS</a>
+                    <a href="#kontak" class="btn btn-secondary">CONTACT</a>
+                </div>
+            </div>
+            <div class="scroll-down">
+                <div class="scroll-container">
+                    <div class="mouse">
+                        <div class="wheel"></div>
+                    </div>
+                    <div class="arrow"></div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-bg">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="tentang" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text reveal">
+                    <h3>Siapa Saya?</h3>
+                    <p>Saya adalah seorang desainer dan developer dengan pengalaman lebih dari 5 tahun dalam industri kreatif. Saya mengkhususkan diri dalam merancang dan membangun solusi digital yang tidak hanya menarik secara visual tetapi juga fungsional.</p>
+                    <p>Dengan latar belakang dalam desain UI/UX dan pengembangan web, saya menggabungkan kreativitas dan keterampilan teknis untuk menciptakan karya yang menonjol.</p>
+                    
+                <div class="skills">
+                    <h3>Keahlian</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">UI/UX Design</span>
+                        <span class="skill-tag">Web Development</span>
+                        <span class="skill-tag">Graphic Design</span>
+                        <span class="skill-tag">Mobile App Design</span>
+                        <span class="skill-tag">Brand Identity</span>
+                        <span class="skill-tag">Motion Graphics</span>
+                        </div>
+                    </div>
+                    
+                    <div class="cta-buttons">
+                        <a href="#portofolio" class="btn btn-primary">Lihat Portofolio</a>
+                        <a href="assets/docs/cv.pdf" class="btn btn-secondary" download>Unduh CV</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="about-stats reveal">
+                <div class="stat-item">
+                    <h3>5+</h3>
+                    <p>Tahun Pengalaman</p>
+                </div>
+                <div class="stat-item">
+                    <h3>50+</h3>
+                    <p>Proyek Selesai</p>
+                </div>
+                <div class="stat-item">
+                    <h3>30+</h3>
+                    <p>Klien Puas</p>
+                </div>
+                <div class="stat-item">
+                    <h3>10+</h3>
+                    <p>Penghargaan</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portofolio" class="portfolio-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Portofolio</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="portfolio-filter reveal">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="web">Web Design</button>
+                <button class="filter-btn" data-filter="ui">UI/UX</button>
+                <button class="filter-btn" data-filter="graphic">Graphic Design</button>
+                <button class="filter-btn" data-filter="brand">Branding</button>
+            </div>
+            
+            <div class="portfolio-grid">
+                <!-- Project 1 -->
+                <div class="portfolio-item reveal web ui" data-category="web,ui">
+                    <div class="portfolio-img">
+                        <img src="assets/img/projects/project1.jpg" alt="Website E-commerce">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Website E-commerce</h3>
+                        <p>Web Design, UI/UX</p>
+                        <a href="#" class="portfolio-link" data-modal="modal-1">
+                            <i class="fas fa-plus"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="portfolio-item reveal graphic" data-category="graphic">
+                    <div class="portfolio-img">
+                        <img src="assets/img/projects/project2.jpg" alt="Poster Event">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Poster Event</h3>
+                        <p>Graphic Design</p>
+                        <a href="#" class="portfolio-link" data-modal="modal-2">
+                            <i class="fas fa-plus"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="portfolio-item reveal brand" data-category="brand">
+                    <div class="portfolio-img">
+                        <img src="assets/img/projects/project3.jpg" alt="Brand Identity">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Brand Identity</h3>
+                        <p>Branding</p>
+                        <a href="#" class="portfolio-link" data-modal="modal-3">
+                            <i class="fas fa-plus"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="portfolio-item reveal ui" data-category="ui">
+                    <div class="portfolio-img">
+                        <img src="assets/img/projects/project4.jpg" alt="Mobile App">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Mobile App</h3>
+                        <p>UI/UX</p>
+                        <a href="#" class="portfolio-link" data-modal="modal-4">
+                            <i class="fas fa-plus"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="portfolio-item reveal web" data-category="web">
+                    <div class="portfolio-img">
+                        <img src="assets/img/projects/project5.jpg" alt="Website Portofolio">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Website Portofolio</h3>
+                        <p>Web Design</p>
+                        <a href="#" class="portfolio-link" data-modal="modal-5">
+                            <i class="fas fa-plus"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Project 6 -->
+                <div class="portfolio-item reveal graphic brand" data-category="graphic,brand">
+                    <div class="portfolio-img">
+                        <img src="assets/img/projects/project6.jpg" alt="Branding Kit">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Branding Kit</h3>
+                        <p>Graphic Design, Branding</p>
+                        <a href="#" class="portfolio-link" data-modal="modal-6">
+                            <i class="fas fa-plus"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Popups for Portfolio -->
+    <div class="portfolio-modals">
+        <!-- Modal 1 -->
+        <div id="modal-1" class="modal">
+            <div class="modal-content">
+                <span class="modal-close">&times;</span>
+                <div class="modal-body">
+                    <h2>Website E-commerce</h2>
+                    <div class="modal-img">
+                        <img src="assets/img/projects/project1.jpg" alt="Website E-commerce">
+                    </div>
+                    <div class="modal-details">
+                        <div class="modal-info">
+                            <h3>Detail Proyek</h3>
+                            <ul>
+                                <li><strong>Kategori:</strong> Web Design, UI/UX</li>
+                                <li><strong>Klien:</strong> Fashion Store</li>
+                                <li><strong>Tanggal:</strong> Januari 2023</li>
+                                <li><strong>URL:</strong> <a href="#" target="_blank">www.contoh.com</a></li>
+                            </ul>
+                        </div>
+                        <div class="modal-description">
+                            <h3>Deskripsi</h3>
+                            <p>Proyek ini melibatkan perancangan dan pengembangan situs e-commerce modern untuk toko fashion. Tujuan utamanya adalah menciptakan pengalaman belanja online yang intuitif dan menarik secara visual.</p>
+                            <p>Fitur utama meliputi katalog produk yang responsif, sistem keranjang belanja yang mudah digunakan, integrasi metode pembayaran, dan dashboard admin yang komprehensif. Desain difokuskan pada kesederhanaan, kecepatan, dan pengalaman pengguna yang optimal.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 2 -->
+        <div id="modal-2" class="modal">
+            <div class="modal-content">
+                <span class="modal-close">&times;</span>
+                <div class="modal-body">
+                    <h2>Poster Event</h2>
+                    <div class="modal-img">
+                        <img src="assets/img/projects/project2.jpg" alt="Poster Event">
+                    </div>
+                    <div class="modal-details">
+                        <div class="modal-info">
+                            <h3>Detail Proyek</h3>
+                            <ul>
+                                <li><strong>Kategori:</strong> Graphic Design</li>
+                                <li><strong>Klien:</strong> Festival Musik</li>
+                                <li><strong>Tanggal:</strong> Maret 2023</li>
+                            </ul>
+                        </div>
+                        <div class="modal-description">
+                            <h3>Deskripsi</h3>
+                            <p>Desain poster untuk festival musik tahunan dengan tema urban modern. Poster menggabungkan elemen visual yang menarik dan tipografi dinamis untuk menarik perhatian target audiens.</p>
+                            <p>Proyek mencakup desain poster dalam berbagai ukuran untuk cetak dan digital, banner media sosial, dan materi promosi terkait lainnya. Fokus utama adalah menciptakan identitas visual yang kuat dan konsisten untuk acara tersebut.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tambahkan modal lainnya (3-6) secara serupa -->
+    </div>
+
+    <!-- Gallery Section -->
+    <section id="galeri" class="gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Galeri</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="gallery-grid">
+                <!-- Gallery Item 1 -->
+                <div class="gallery-item reveal">
+                    <img src="assets/img/gallery/gallery1.jpg" alt="UI Design" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h3>UI Design Collection</h3>
+                        <p>Kumpulan desain antarmuka pengguna</p>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 2 -->
+                <div class="gallery-item reveal">
+                    <img src="assets/img/gallery/gallery2.jpg" alt="Photography" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h3>Photography</h3>
+                        <p>Seri foto urban</p>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 3 -->
+                <div class="gallery-item reveal">
+                    <img src="assets/img/gallery/gallery3.jpg" alt="Illustration" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h3>Illustration</h3>
+                        <p>Karya ilustrasi digital</p>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 4 -->
+                <div class="gallery-item reveal">
+                    <img src="assets/img/gallery/gallery4.jpg" alt="Typography" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h3>Typography</h3>
+                        <p>Eksperimen tipografi</p>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 5 -->
+                <div class="gallery-item reveal">
+                    <img src="assets/img/gallery/gallery5.jpg" alt="Branding" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h3>Branding</h3>
+                        <p>Proyek identitas brand</p>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 6 -->
+                <div class="gallery-item reveal">
+                    <img src="assets/img/gallery/gallery6.jpg" alt="Product Design" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h3>Product Design</h3>
+                        <p>Desain produk konseptual</p>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 7 -->
+                <div class="gallery-item reveal">
+                    <img src="assets/img/gallery/gallery7.jpg" alt="3D Renders" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h3>3D Renders</h3>
+                        <p>Visualisasi 3D</p>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 8 -->
+                <div class="gallery-item reveal">
+                    <img src="assets/img/gallery/gallery8.jpg" alt="Motion Graphics" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h3>Motion Graphics</h3>
+                        <p>Cuplikan dari proyek animasi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox">
+        <div class="lightbox-content">
+            <img src="" alt="" class="lightbox-img">
+            <div class="lightbox-caption">
+                <h3 class="lightbox-title"></h3>
+                <p class="lightbox-description"></p>
+            </div>
+            <span class="lightbox-close">&times;</span>
+            <span class="lightbox-prev">&#10094;</span>
+            <span class="lightbox-next">&#10095;</span>
+        </div>
+    </div>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Resume</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="resume-download">
+                <a href="assets/docs/cv.pdf" class="btn btn-primary" download>
+                    <i class="fas fa-download"></i> Unduh CV
+                </a>
+            </div>
+            
+            <div class="resume-container">
+                <!-- Education -->
+                <div class="resume-column reveal">
+                    <h3 class="resume-title">
+                        <i class="fas fa-graduation-cap"></i> Pendidikan
+                    </h3>
+                    
+                    <div class="resume-item">
+                        <h4>S1 Desain Komunikasi Visual</h4>
+                        <h5>2015 - 2019</h5>
+                        <p class="resume-place">Universitas Terkemuka</p>
+                        <p>Fokus pada desain UI/UX dan branding. Lulus dengan predikat cumlaude dan proyek akhir tentang desain interaktif untuk platform edukasi.</p>
+                    </div>
+                    
+                    <div class="resume-item">
+                        <h4>Diploma Pengembangan Web</h4>
+                        <h5>2014 - 2015</h5>
+                        <p class="resume-place">Akademi Digital</p>
+                        <p>Program intensif dengan fokus pada HTML, CSS, JavaScript, dan pengembangan front-end.</p>
+                    </div>
+                    
+                    <div class="resume-item">
+                        <h4>SMA Jurusan IPA</h4>
+                        <h5>2011 - 2014</h5>
+                        <p class="resume-place">SMA Negeri 1</p>
+                        <p>Aktif dalam klub komputer dan desain grafis. Memenangkan beberapa kompetisi desain tingkat sekolah dan kota.</p>
+                    </div>
+                </div>
+                
+                <!-- Experience -->
+                <div class="resume-column reveal">
+                    <h3 class="resume-title">
+                        <i class="fas fa-briefcase"></i> Pengalaman
+                    </h3>
+                    
+                    <div class="resume-item">
+                        <h4>Senior UI/UX Designer</h4>
+                        <h5>2021 - Sekarang</h5>
+                        <p class="resume-place">Perusahaan Digital</p>
+                        <p>Memimpin tim desain untuk proyek-proyek besar. Bertanggung jawab atas arsitektur informasi, wireframing, prototyping, dan implementasi design system.</p>
+                    </div>
+                    
+                    <div class="resume-item">
+                        <h4>Web Designer</h4>
+                        <h5>2019 - 2021</h5>
+                        <p class="resume-place">Agensi Kreatif</p>
+                        <p>Merancang dan mengembangkan website untuk berbagai klien dari industri berbeda. Berkolaborasi dengan tim developer untuk implementasi desain.</p>
+                    </div>
+                    
+                    <div class="resume-item">
+                        <h4>Graphic Designer (Internship)</h4>
+                        <h5>2018 - 2019</h5>
+                        <p class="resume-place">Studio Desain</p>
+                        <p>Magang sebagai desainer grafis untuk proyek branding dan marketing. Berkontribusi dalam pengembangan konsep visual dan aset desain.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Skills -->
+            <div class="skills-container reveal">
+                <h3 class="skills-title">Keterampilan Profesional</h3>
+                
+                <div class="skills-grid">
+                    <div class="skill-progress">
+                        <div class="skill-name">UI/UX Design</div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-progress">
+                        <div class="skill-name">Web Development</div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-progress">
+                        <div class="skill-name">Graphic Design</div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-progress">
+                        <div class="skill-name">Brand Identity</div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-progress">
+                        <div class="skill-name">Motion Graphics</div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-progress">
+                        <div class="skill-name">Illustration</div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 70%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tools -->
+            <div class="tools-container reveal">
+                <h3 class="tools-title">Tools & Software</h3>
+                
+                <div class="tools-grid">
+                    <div class="tool-item">
+                        <i class="fab fa-figma"></i>
+                        <span>Figma</span>
+                    </div>
+                    
+                    <div class="tool-item">
+                        <i class="fab fa-adobe"></i>
+                        <span>Photoshop</span>
+                    </div>
+                    
+                    <div class="tool-item">
+                        <i class="fab fa-adobe"></i>
+                        <span>Illustrator</span>
+                    </div>
+                    
+                    <div class="tool-item">
+                        <i class="fab fa-adobe"></i>
+                        <span>XD</span>
+                    </div>
+                    
+                    <div class="tool-item">
+                        <i class="fab fa-html5"></i>
+                        <span>HTML5</span>
+                    </div>
+                    
+                    <div class="tool-item">
+                        <i class="fab fa-css3-alt"></i>
+                        <span>CSS3</span>
+                    </div>
+                    
+                    <div class="tool-item">
+                        <i class="fab fa-js"></i>
+                        <span>JavaScript</span>
+                    </div>
+                    
+                    <div class="tool-item">
+                        <i class="fab fa-sketch"></i>
+                        <span>Sketch</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="kontak" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Kontak</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-info reveal">
+                    <div class="contact-info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Lokasi</h3>
+                            <p>Jakarta, Indonesia</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>hello@example.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Telepon</h3>
+                            <p>+62 123 4567 890</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <i class="fas fa-globe"></i>
+                        <div>
+                            <h3>Website</h3>
+                            <p>www.example.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-dribbble"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-behance"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container reveal">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nama</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subjek</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Pesan</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Kirim Pesan
+                        </button>
+                    </form>
+                    
+                    <div class="form-message">
+                        <div class="success-message">
+                            <i class="fas fa-check-circle"></i>
+                            <p>Pesan berhasil dikirim! Terima kasih telah menghubungi saya.</p>
+                        </div>
+                        
+                        <div class="error-message">
+                            <i class="fas fa-exclamation-circle"></i>
+                            <p>Terjadi kesalahan. Silakan coba lagi nanti.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">Portfolio</span>
+                </div>
+                
+                <p class="footer-text">
+                    &copy; <span id="year"></span> Nama Saya. Semua hak dilindungi.
+                </p>
+                
+                <div class="footer-links">
+                    <a href="#beranda">Beranda</a>
+                    <a href="#tentang">Tentang</a>
+                    <a href="#portofolio">Portofolio</a>
+                    <a href="#galeri">Galeri</a>
+                    <a href="#resume">Resume</a>
+                    <a href="#kontak">Kontak</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>
