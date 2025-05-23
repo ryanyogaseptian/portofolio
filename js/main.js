@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Typing animation
     const typingTextElement = document.querySelector('.typed-text');
     const cursor = document.querySelector('.cursor');
-    const words = ["E-learning Developer", "Instructional Media Developer", "UI/UX Designer", "Web Developer", "Graphic Designer"];
+    const words = ["Learning Management System", "Instructional Media Developer", "UI/UX Designer", "Learning Module Development", "Graphic Designer"];
     let wordIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
