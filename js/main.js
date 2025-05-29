@@ -262,39 +262,52 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Form submission
+    // Form submission
     const contactForm = document.getElementById('contactForm');
     const successMessage = document.querySelector('.success-message');
     const errorMessage = document.querySelector('.error-message');
 
     if (contactForm) {
-        contactForm.addEventListener('submit', (e) => {
+        contactForm.addEventListener('submit', async (e) => {
             e.preventDefault();
-            
-            // Simulate form submission (would be replaced with actual form submission)
+
             const formData = new FormData(contactForm);
-            
+
             // Simple validation
             const name = formData.get('name');
             const email = formData.get('email');
             const message = formData.get('message');
-            
+
             if (!name || !email || !message) {
                 showErrorMessage();
                 return;
             }
-            
-            // Simulating successful submission
-            setTimeout(() => {
-                contactForm.reset();
-                showSuccessMessage();
-            }, 1000);
+
+            try {
+                const response = await fetch(contactForm.action, {
+                    method: contactForm.method,
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    contactForm.reset();
+                    showSuccessMessage();
+                } else {
+                    showErrorMessage();
+                }
+            } catch (error) {
+                showErrorMessage();
+            }
         });
     }
 
     function showSuccessMessage() {
         successMessage.style.display = 'flex';
         errorMessage.style.display = 'none';
-        
+
         setTimeout(() => {
             successMessage.style.display = 'none';
         }, 5000);
@@ -303,11 +316,12 @@ document.addEventListener('DOMContentLoaded', () => {
     function showErrorMessage() {
         errorMessage.style.display = 'flex';
         successMessage.style.display = 'none';
-        
+
         setTimeout(() => {
             errorMessage.style.display = 'none';
         }, 5000);
     }
+
 
     // Back to top button
     const backToTopButton = document.querySelector('.back-to-top');
